@@ -106,5 +106,6 @@ void loop()
     delay(DELAY);
   } else {
     pixels.clear();
+    pixels.show();
   }
 }
