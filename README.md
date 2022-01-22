@@ -1,6 +1,8 @@
 # Tesseract
 Glowing Cube thing
 
+![Cube](https://github.com/jastill/Tesseract/blob/main/media/Glowing.png?raw=true)
+
 ## Build
 
 This was built with some parts that were removed from an old project, an old USB charger, a new tilt sensor and a new photo cube.
