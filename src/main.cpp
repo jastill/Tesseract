@@ -13,9 +13,10 @@
 #include <Arduino.h>
 #include <Adafruit_NeoPixel.h>
 
-#define LED_PIN D1
-#define NUMPIXELS 8
-#define MOVEMENT_IN D4
+#define LED_PIN D4
+#define NUMPIXELS 12
+#define MOVEMENT_IN D6
+#define MOVEMENT_OUT D5
 
 Adafruit_NeoPixel pixels(NUMPIXELS, LED_PIN, NEO_GRB + NEO_KHZ800);
 
@@ -51,6 +52,8 @@ IRAM_ATTR void movementDetected() {
  */
 void setup()
 {
+  pinMode(MOVEMENT_OUT,OUTPUT);
+  digitalWrite(MOVEMENT_OUT, LOW);
   pinMode(MOVEMENT_IN,INPUT_PULLUP);
   attachInterrupt(digitalPinToInterrupt(MOVEMENT_IN), movementDetected, CHANGE);
 
