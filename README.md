@@ -29,12 +29,12 @@ Connections:
 |-------|-----|
 | 5v | VDC |
 | GND | GND |
-| D1 | DIN |
+| D4 | DIN |
 
 | WeMos | Tilt Sensor |
 |-------|-----|
-| GND | GND |
-| D8 | DIN |
+| D5 Output LOW | PIN |
+| D6 Input Pullup | PIN |
 
 ## References
 
