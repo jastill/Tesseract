@@ -13,7 +13,7 @@
 #include <Arduino.h>
 #include <Adafruit_NeoPixel.h>
 
-#define LED_PIN D4
+#define LED_PIN D3
 #define NUMPIXELS 12
 #define MOVEMENT_IN D6
 #define MOVEMENT_OUT D5
@@ -58,7 +58,12 @@ void setup()
   attachInterrupt(digitalPinToInterrupt(MOVEMENT_IN), movementDetected, CHANGE);
 
   pixels.begin();
-  pixels.clear();
+  pixels.clear(); 
+  
+  // Turn off the BUILT_IN LED.
+  // This is actually Blue and could be used as a lesser light.
+  pinMode(LED_BUILTIN,OUTPUT);
+  digitalWrite(LED_BUILTIN,HIGH);
 }
 
 /**

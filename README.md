@@ -29,7 +29,7 @@ Connections:
 |-------|-----|
 | 5v | VDC |
 | GND | GND |
-| D4 | DIN |
+| D3 | DIN |
 
 | WeMos | Tilt Sensor |
 |-------|-----|
